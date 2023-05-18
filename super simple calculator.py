@@ -29,14 +29,19 @@ while True:
         
     elif task=="trig":
         angle=int(input("Enter your Angle: "))
-        print( "Sin = " ,math.sin(angle))
-        print("Cos = ", math.cos(angle))
-        print("Cot = " , math.cos(angle)/math.sin(angle))
-        print("Tan = " , math.tan(angle))
+        trig_operation=input("Enter what do you want know about this angle (sin,cos,tan,cotg): ")
+        if trig_operation=="sin":
+            print( "Sin = " ,math.sin(angle))
+        elif trig_operation=="cos":
+            print("Cos = ", math.cos(angle))
+        elif trig_operation=="cotg" or "cot":
+            print("Cotg = " , math.cos(angle)/math.sin(angle))
+        elif trig_operation==tan:
+            print("Tan = " , math.tan(angle))
     elif task=="sqr":
         squre_root=int(input("Enter a number to calculate Squre root : "))
         print("Squer root = ", math.sqrt(squre_root))
-    elif task=="Factl":
+    elif task=="Fact" Or "Factoriel" Or "fact" Or "factoriel":
         num_fact=int(input("Enter a number: "))
         print("Factoreil = ",math.factorial(num_fact))
     
