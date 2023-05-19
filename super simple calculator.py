@@ -28,7 +28,7 @@ while True:
         print("Results = " ,result)
         
     elif task=="trig":
-        angle=int(input("Enter your Angle: "))
+        angle=float(input("Enter your Angle: "))
         trig_operation=input("Enter what do you want know about this angle (sin,cos,tan,cotg): ")
         if trig_operation=="sin":
             print( "Sin = " ,math.sin(angle))
